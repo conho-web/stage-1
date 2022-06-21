@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bundle.css">
     <title>MOVEE</title>
 </head>
 
@@ -18,35 +15,34 @@
         <section id="main">
             <div class="wrapper">
                 <header>
-                    <img src="./img/logo.svg" alt="" class="logo">
+                    <img src="./img/logo.svg" alt="" class="header-logo">
 
-                    <nav class="links">
-                        <a href="#" class="link">Цены</a>
-                        <a href="#" class="link">Автопарк</a>
-                        <a href="#" class="link">Отзывы</a>
-                        <a href="#" class="link">Контакты</a>
+                    <nav class="header_links">
+                        <a href="#" class="header-link">Цены</a>
+                        <a href="#" class="header-link">Автопарк</a>
+                        <a href="#" class="header-link">Отзывы</a>
+                        <a href="#" class="header-link">Контакты</a>
                     </nav>
 
-                    <a href="tel:8(029)-999-12-13" class="phone-number">8(029)-999-12-13</a>
+                    <a href="tel:8(029)-999-12-13" class="header-phone">8(029)-999-12-13</a>
 
-                    <input id="toggle" type="checkbox"></input>
+                    <input id="toggle" type="checkbox">
+                        <label for="toggle" class="burger-button">
+                            <span class="burger-line-top"></span>
+                            <span class="burger-line-center"></span>
+                            <span class="burger-line-bottom"></span>
+                        </label>
+                    </input>
 
-                    <label for="toggle" class="burger-button">
-                        <span class="line-top"></span>
-                        <span class="line-center"></span>
-                        <span class="line-bottom"></span>
-                    </label>
-
-                    <div class="burger-menu">
-                        <nav class="burger-links">
-                            <a href="#" class="burger-link">Главная</a>
+                    <div class="burger_menu">
+                        <nav class="burger_links">
                             <a href="#" class="burger-link">Цена</a>
                             <a href="#" class="burger-link">Автопарк</a>
                             <a href="#" class="burger-link">Отзывы</a>
                             <a href="#" class="burger-link">Контакты</a>
                         </nav>
 
-                        <a href="tel:8(029)-999-12-13" class="burger-phone-number">8(029)-999-12-13</a>
+                        <a href="tel:8(029)-999-12-13" class="burger-phone">8(029)-999-12-13</a>
                     </div>
                 </header>
 
@@ -55,7 +51,7 @@
                         <h1 class="main-title">Квартирные</br>переезды</h1>
                         <h3 class="main-sub-title">По Бресту и области</h3>
                         <img src="./img/main-photo-tablet.png" alt="" class="main-photo-tablet">
-                        <button class="main-button">Заказать<span class="border"></span></button>
+                        <button class="main-button">Заказать<span class="main-button-border"></span></button>
                     </div>
 
                     <div class="progress_blocks">
