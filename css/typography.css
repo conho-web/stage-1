@@ -28,9 +28,3 @@
     font-size: 2rem;
     font-weight: 600;
 }
-
-@media screen and (max-width: 600px) {
-    .title {
-        font-size: 1.25rem;
-    }
-}
