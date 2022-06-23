@@ -1,0 +1,30 @@
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.text-400 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.text-500 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 500;
+}
+
+.underTitle {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: 600;
+}
