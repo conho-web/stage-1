@@ -60,6 +60,12 @@
   margin: 1.25rem 0 0 0;
 }
 
+.swiper__button:hover {
+  box-shadow: 0 0.25rem 1.5rem 0 var(--yellow);
+  transition: all .5s linear;
+  color: var(--white);
+}
+
 .swiper__img {
   width: 40rem;
 }

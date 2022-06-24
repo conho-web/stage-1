@@ -46,6 +46,14 @@
   padding: 1rem 3.75rem;
   border: 1px solid var(--grey);
   margin: 3.75rem auto 0 auto;
+  transition: all .5s linear;
+}
+
+.reviews__open-all:hover {
+  background-color: var(--white);
+  font-weight: 700;
+  border: 1px solid var(--white);
+  transition: all .5s linear;
 }
 
 @media screen and (max-width: 768px) {
