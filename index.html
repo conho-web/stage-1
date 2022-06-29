@@ -18,10 +18,10 @@
           <img src="./img/logo.svg" alt=" " class="header-logo">
 
           <nav class="header_links">
-            <a href="#" class="header-link">Цены</a>
-            <a href="#" class="header-link">Автопарк</a>
-            <a href="#" class="header-link">Отзывы</a>
-            <a href="#" class="header-link">Контакты</a>
+            <a href="#price" class="header-link">Цены</a>
+            <a href="#swiper" class="header-link">Автопарк</a>
+            <a href="#reviews" class="header-link">Отзывы</a>
+            <a href="#footer" class="header-link">Контакты</a>
           </nav>
 
           <a href="tel:8(029)-999-12-13" class="header-phone">8(029)-999-12-13</a>
@@ -252,6 +252,150 @@
         <button class="reviews__open-all subtitle">Все отзывы</button>
       </div>
     </section>
+
+    <section id="order">
+      <div class="wrapper order__wrapper">
+        <h2 class="order__title title">Закажи  переезд прямо сейчас со скидкой %</h2>
+        <p class="order__subtitle text">Мы перезвоним в течении 10 секунд</p>
+
+        <div class="order__inputs">
+          <input class="order__name" type="text" placeholder="Ваше имя"/>
+          <input class="order__phone" type="text" placeholder="Телефон"/>
+        </div>
+
+        <div class="order__selects">
+          <div class="order__wrapper">
+            <h4 class="order__h4">Укажите область</h4>
+
+            <select class="order__select">
+              <option value="" disabled selected hidden>Например: Минская</option>
+              <option value="Минская">Минская</option>
+              <option value="Брестская">Брестская</option>
+              <option value="Могилевская">Могилевская</option>
+              <option value="Витебская">Витебская</option>
+              <option value="Гродненская">Гродненская</option>
+            </select>
+          </div>
+
+          <div class="order__wrapper">
+            <h4 class="order__h4">Укажите город</h4>
+
+            <select class="order__select">
+              <option value="" disabled selected hidden>Мозырь</option>
+              <option value="Минск">Минск</option>
+              <option value="Брест">Брест</option>
+              <option value="Могилев">Могилев</option>
+              <option value="Витебск">Витебск</option>
+              <option value="Гродно">Гродно</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="order__payment">
+          <h4 class="order__h4">Способ оплаты</h4>
+
+          <div class="order__labels">
+            <div class="order__radio-item">
+              <input type="radio" id="element1" name="element" value="Наличными курьеру" checked>
+              <label for="element1">Наличными курьеру</label>
+            </div>
+
+            <div class="order__radio-item">
+              <input type="radio" id="element2" name="element" value="Картой курьеру">
+              <label for="element2">Картой курьеру</label>
+            </div>
+
+            <div class="order__radio-item">
+              <input type="radio" id="element3" name="element" value="Банковский перевод">
+              <label for="element3">Банковский перевод</label>
+            </div>
+          </div>
+        </div> 
+
+        <div class="order__checkboxes">
+          <div class="order__checkbox">
+            <input type="checkbox" id="box1" class="order__checkbox-quad" name="box" value="Дополнительные услуги">
+            <label for="box1" class="order__checkbox-title order__h4">Дополнительные услуги<img src="./img/order-arrow.svg" class="order__checkbox-arrow" alt=" "></label>
+
+            <div class="order__checkbox-wrapper">
+              <div class="order__checkbox-container">
+                <input class="order__checkbox-input" type="checkbox" id="item1" name="item1" value="Вызов замерщика">
+                <label class="order__checkbox-label" for="item1">Вызов замерщика</label>
+              </div>
+  
+              <div class="order__checkbox-container">
+                <input class="order__checkbox-input" type="checkbox" id="item2" name="item2" value="Вызов замерщика">
+                <label class="order__checkbox-label" for="item2">Упаковка для хрупких предметов</label>
+              </div>
+  
+              <div class="order__checkbox-container">
+                <input class="order__checkbox-input" type="checkbox" id="item3" name="item3" value="Вызов замерщика">
+                <label class="order__checkbox-label" for="item3">Кран</label>
+              </div>
+  
+              <div class="order__checkbox-container">
+                <input class="order__checkbox-input" type="checkbox" id="item4" name="item4" value="Вызов замерщика">
+                <label class="order__checkbox-label" for="item4">Сборка мебели</label>
+              </div>
+  
+              <div class="order__checkbox-container">
+                <input class="order__checkbox-input" type="checkbox" id="item5" name="item5" value="Вызов замерщика">
+                <label class="order__checkbox-label" for="item5">Крупногабаритные предметы</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="order__counter">
+          <p class="order__counter-text">05:37:25</p>
+
+          <div class="order__contact">
+            <button class="order__button">Заказать со скидкой<span class="order__button-border"></span></button>
+            <div class="order__contact-checkbox">
+              <input class="order__contact-input" type="checkbox" id="item6" name="item6" value="Даю согласие на обработку данных">
+              <label class="order__contact-label" for="item6">Даю согласие на обработку данных</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2877.942660643322!2d23.694243734500198!3d52.09102083755116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47210bf0d6c7cb8f%3A0x5d0b2cc4f645f8ca!2svulica%20Budzionaha%2064%2C%20Brest!5e0!3m2!1sen!2sby!4v1656455684441!5m2!1sen!2sby" width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <footer id="footer">
+      <div class="wrapper">
+        <div class="footer__title">
+          <img src="./img/logo.svg" class="footer__logo" alt=" ">
+          <a href="#" class="footer__title-link">Политика конфиденциальнности</a>
+          <a href="#" class="footer__title-link">Соглашение на обработку персональных данных</a>
+        </div>
+
+        <div class="footer__links">
+          <a href="#price" class="footer__link">Цены</a>
+          <a href="#swiper" class="footer__link">Автопарк</a>
+          <a href="#reviews" class="footer__link">Отзывы</a>
+          <a href="#footer" class="footer__link">Контакты</a>
+        </div>
+
+        <div class="footer__contact">
+          <div class="footer__social-networks">
+            <a href="https://www.youtube.com/" target="_blank"><img src="./img/youtube.svg" alt=" "></a>
+            <a href="https://vk.com" target="_blank"><img src="./img/vk.svg" alt=" "></a>
+            <a href="https://facebook.com/" target="_blank"><img src="./img/facebook.svg" alt=" "></a>
+            <a href="https://www.instagram.com" target="_blank"><img src="./img/instagram.svg" alt=" "></a>
+          </div>
+
+          <a href="#" class="footer__mail">hello@movee.ru</a>
+        </div>
+
+        <div class="footer__call">
+          <button class="footer__button">Обратный звонок</button>
+          <a href="tel:8 (029)-999-12-13" class="footer__number">8 (029)-999-12-13</a>
+        </div>
+      </div>
+    </footer>
   </main>
 
 </body>

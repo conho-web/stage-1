@@ -57,6 +57,7 @@
 .swiper__button {
   padding: 1rem 5rem;
   background-color: var(--yellow);
+  transition: all .5s linear;
   margin: 1.25rem 0 0 0;
 }
 
