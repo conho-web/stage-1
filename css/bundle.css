@@ -5,6 +5,7 @@
 @import url(./variables.css);
 @import url(./s-main.css);
 @import url(./s-about.css);
+@import url(../libraries/swiper/swiper.css);
 @import url(./s-swiper.css);
 @import url(./s-reviews.css);
 @import url(./s-order.css);
