@@ -1,3 +1,7 @@
+.more {
+  display: none;
+}
+
 #reviews {
   background-color: var(--yellow);
   padding: 6.25rem 0;
@@ -12,6 +16,14 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.25rem;
   padding: 3.75rem 0 0 0;
+}
+
+.reviews__block-active .more {
+  display: contents;
+}
+
+.reviews__block-active .dots {
+  display: none;
 }
 
 .reviews__name {
@@ -39,6 +51,8 @@
 
 .reviews__read-more {
   color: var(--grey);
+  border-bottom: 1px solid var(--grey);
+  cursor: pointer;
 }
 
 .reviews__open-all {

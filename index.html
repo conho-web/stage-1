@@ -241,8 +241,8 @@
                 <img src="./img/star.svg" alt=" ">
               </div>
             </div>
-            <p class="reviews__text text">Обращение к вам за помощью в переезде оставило только положительные впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом во двор, он проявил себя как компетентный и профессиональный сотрудник, за что ему огромное...</p>
-            <a href="#" class="reviews__read-more">Читать полностью</a>
+            <p class="reviews__text text">Обращение к вам за помощью в переезде оставило только положительные впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом во двор, он проявил себя как компетентный и профессиональный сотрудник, за что ему огромное<span class="dots">...</span><span class="more">положительные впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом во двор, он проявил себя как компетентный и профессиональный сотрудник, за что ему огромное.</span></p>
+            <a class="reviews__read-more">Читать полностью</a>
           </div>
 
           <div class="reviews__block">
@@ -257,8 +257,8 @@
                 <img src="./img/star.svg" alt=" ">
               </div>
             </div>
-            <p class="reviews__text text">Обращение к вам за помощью в переезде оставило только положительные впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом во двор, он проявил себя как компетентный и профессиональный сотрудник, за что ему огромное...</p>
-            <a href="#" class="reviews__read-more">Читать полностью</a>
+            <p class="reviews__text text">Обращение к вам за помощью в переезде оставило только положительные впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом во двор, он проявил себя как компетентный и профессиональный сотрудник, за что ему огромное<span class="dots">...</span><span class="more">положительные впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом во двор, он проявил себя как компетентный и профессиональный сотрудник, за что ему огромное.</span></p>
+            <a class="reviews__read-more">Читать полностью</a>
           </div>
 
           <div class="reviews__block">
@@ -273,8 +273,8 @@
                 <img src="./img/star.svg" alt=" ">
               </div>
             </div>
-            <p class="reviews__text text">Обращение к вам за помощью в переезде оставило только положительные впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом во двор, он проявил себя как компетентный и профессиональный сотрудник, за что ему огромное...</p>
-            <a href="#" class="reviews__read-more">Читать полностью</a>
+            <p class="reviews__text text">Обращение к вам за помощью в переезде оставило только положительные впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом во двор, он проявил себя как компетентный и профессиональный сотрудник, за что ему огромное<span class="dots">...</span><span class="more">положительные впечатления. Хотелось отметить замечательного водителя газели Алексея. Были трудности с заездом во двор, он проявил себя как компетентный и профессиональный сотрудник, за что ему огромное.</span></p>
+            <a class="reviews__read-more">Читать полностью</a>
           </div>
         </div>
 
@@ -283,13 +283,13 @@
     </section>
 
     <section id="order">
-      <form action="#order" onsubmit="checkInputs()" class="wrapper order__wrapper">
+      <form action="#order" id="form" class="wrapper order__wrapper">
         <h2 class="order__title title">Закажи  переезд прямо сейчас со скидкой %</h2>
         <p class="order__subtitle text">Мы перезвоним в течении 10 секунд</p>
 
         <div class="order__inputs">
-          <input class="order__name" type="text" placeholder="Ваше имя"/>
-          <input class="order__phone" type="text" placeholder="Телефон"/>
+          <input class="order__name validate-input" type="text" placeholder="Ваше имя"/>
+          <input class="order__phone validate-input" type="text" placeholder="Телефон"/>
         </div>
 
         <div class="order__selects">
@@ -410,14 +410,24 @@
         </div>
 
         <div class="footer__contact">
-          <div class="footer__social-networks">
-            <a href="https://www.youtube.com/" target="_blank"><img src="./img/youtube.svg" alt=" "></a>
-            <a href="https://vk.com" target="_blank"><img src="./img/vk.svg" alt=" "></a>
-            <a href="https://facebook.com/" target="_blank"><img src="./img/facebook.svg" alt=" "></a>
-            <a href="https://www.instagram.com" target="_blank"><img src="./img/instagram.svg" alt=" "></a>
+          <div class="footer__contact-top">
+            <div class="footer__social-networks">
+              <a href="https://www.youtube.com/" target="_blank"><img src="./img/youtube.svg" alt=" "></a>
+              <a href="https://vk.com" target="_blank"><img src="./img/vk.svg" alt=" "></a>
+              <a href="https://facebook.com/" target="_blank"><img src="./img/facebook.svg" alt=" "></a>
+              <a href="https://www.instagram.com" target="_blank"><img src="./img/instagram.svg" alt=" "></a>
+            </div>
+  
+            <a href="#" class="footer__mail">hello@movee.ru</a>
           </div>
-
-          <a href="#" class="footer__mail">hello@movee.ru</a>
+          <div class="footer__contact-bottom">
+            <p class="footer__share-text">Поделиться в</br>соц. сетях</p>
+            
+            <div class="footer__share-links">
+              <a target="_blank" onClick='window.open("https://vk.com/share.php?url=АДРЕС_СТРАНИЦЫ","sharer","status=0,toolbar=0,width=650,height=500");'><img src="./img/vk.svg" alt=" "></a>
+              <a target="_blank" onClick='window.open("https://www.facebook.com/login.php?skip_api_login=1&api_key=966242223397117&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fkid_directed_site%3D0%26sdk%3Djoey%26u%3Dhttps%253A%252F%252Fdevelopers.facebook.com%252Fdocs%252Fplugins%252F%26display%3Dpopup%26ref%3Dplugin%26src%3Dshare_button&cancel_url=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Fclose_window%2F%3Fapp_id%3D966242223397117%26connect%3D0%23_%3D_&display=popup&locale=en_US&kid_directed_site=0","sharer","status=0,toolbar=0,width=650,height=500");'><img src="./img/facebook.svg" alt=" "></a>
+            </div>
+          </div>
         </div>
 
         <div class="footer__call">

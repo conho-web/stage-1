@@ -25,46 +25,42 @@ const swiper = new Swiper('.swiper', {
 
 // check value in input
 
-let inputs = document.querySelectorAll('input[type="text"]');
-let moreSity = document.querySelector(".order__more-sity");
+const form = document.querySelector("#form");
 let orderSelectSity = document.querySelector(".order__select-sity");
-let options = document.querySelectorAll("option");
-let check = false;
+let moreSity = document.querySelector(".order__more-sity");
+let inputs = document.querySelectorAll(".validate-input");
 
-function checkInputs() {
+const addOption = (e) => {
+  e.preventDefault();
+  let options = document.querySelectorAll("option");
+
+  options.forEach(option => {
+    console.log(moreSity.value, option.value)
+    if (moreSity.value !== option.value && moreSity.value !== "") {
+      let newOption = document.createElement("option");
+
+      newOption.innerHTML = moreSity.value;
+      newOption.setAttribute("value", moreSity.value);
+      orderSelectSity.insertBefore(newOption, orderSelectSity.lastChild);
+
+      moreSity.value = "";
+    }
+  });
+
   inputs.forEach(input => {
-    if (input.value.length == 0) {
+    if (input.value === "") {
       input.classList.add("order__input-blank");
     }
   });
 
-  options.forEach(option => {
-    if (moreSity.value == option.value) {
-      // console.log("123")
-      check = false;
-    }
-    else {
-      check = true;
+  inputs.forEach(input => {
+    input.onclick = function () {
+      input.classList.remove("order__input-blank");
     }
   });
-
-  if (check == true) {
-    let newOption = document.createElement("option");
-    newOption.innerHTML = moreSity.value;
-    orderSelectSity.insertBefore(newOption, orderSelectSity.lastChild);
-    moreSity.value = "";
-    console.log(options)
-    // options.push(moreSity.value);
-    // let newOption = new Option(moreSity.value, moreSity.value);
-    // orderSelectSity.append(newOption);
-  }
 }
 
-inputs.forEach(input => {
-  input.onclick = function () {
-    input.classList.remove("order__input-blank");
-  }
-});
+form.addEventListener("submit", addOption);
 
 
 
@@ -102,3 +98,33 @@ let everySecond = setInterval(function () {
   let countText = count[0] + ":" + count[1] + ":" + count[2];
   document.getElementById("order__timer").innerHTML = countText;
 }, 1000);
+
+
+
+// read more text
+
+let readMoreButton = document.querySelectorAll(".reviews__read-more");
+
+parent.onclick = function(event) {
+  let target = event.target;
+
+  for (let i = 0; i < readMoreButton.length; i++) {
+    if (target === readMoreButton[i]) {
+      let thisBlock = event.target.closest(".reviews__block");
+
+      if (target.classList.contains('active')) {
+        target.innerHTML = "Читать полностью";
+        target.classList.remove('active');
+
+        thisBlock.classList.remove("reviews__block-active");
+      }
+
+      else {
+        target.innerHTML = "Свернуть";
+        target.classList.add('active');
+
+        thisBlock.classList.add("reviews__block-active");
+      }
+    }    
+  }
+};
