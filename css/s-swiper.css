@@ -13,6 +13,11 @@
   color: var(--grey);
 }
 
+.swiper__links {
+  display: flex;
+  justify-content: center;
+}
+
 .swiper__link {
   display: inline-block;
   padding: 1rem 3.25rem;
@@ -21,6 +26,12 @@
   color: var(--black);
   transition: all .5s linear;
   margin: 0 0.625rem;
+  cursor: pointer;
+}
+
+.swiper__link-active {
+  border: 1px solid #FED100;
+  transition: all .5s linear;
 }
 
 .swiper__link:hover {
@@ -36,6 +47,7 @@
 .swiper__slide {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .swiper__description {

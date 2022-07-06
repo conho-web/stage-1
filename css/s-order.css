@@ -28,6 +28,14 @@
   padding: 0 0 1rem 0;
 }
 
+.order__input-blank {
+  border-bottom: 1px solid var(--red);
+}
+
+.order__input-blank::placeholder {
+  -webkit-text-fill-color: var(--red);
+}
+
 .order__selects {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -58,6 +66,10 @@
   width: 5px;
   height: 2px;
   background-color: var(--grey);
+}
+
+.order__more-sity {
+  margin: 2rem 0 0 0;
 }
 
 .order__payment {
@@ -344,11 +356,14 @@
 }
 
 @media screen and (max-width: 768px) {
-  .order__title, .order__subtitle {
+
+  .order__title,
+  .order__subtitle {
     text-align: center;
   }
 
-  .order__inputs, .order__selects {
+  .order__inputs,
+  .order__selects {
     grid-template-columns: 1fr;
     align-self: center;
     gap: 2.5rem;
@@ -358,7 +373,9 @@
     padding: 2.5rem 0 0 0;
   }
 
-  .order__name, .order__phone, .order__select {
+  .order__name,
+  .order__phone,
+  .order__select {
     width: 100%;
   }
 
@@ -375,7 +392,7 @@
 
   .order__checkbox-container {
     margin: 0 0 1.25rem 0;
-}
+  }
 
   .order__radio-item {
     margin: 0 0 1.25rem 0;
